@@ -1,0 +1,46 @@
+
+
+//Print Stack elements
+
+import java.awt.desktop.SystemSleepEvent;
+import java.util.Stack;
+
+public class Print {
+ public static Stack<Integer> store = new Stack<>();
+    public static void main(String[] args){
+
+
+
+     store.push(12);
+     store.push(13);
+     store.push(234);
+
+     System.out.println("Pop an element from a stack"+"\n");
+     remover();
+
+
+
+    }
+    public static void remover(){
+
+        int Num1 = store.pop();
+        System.out.println("The element that deleted "+Num1);
+        String dis1 = store.toString();
+        System.out.println("The current stack contents "+dis1+"\n");
+
+        int Num2 = store.pop();
+        System.out.println("The element that deleted "+Num2);
+        String dis2 = store.toString();
+        System.out.println("The current stack contents "+dis2+"\n");
+
+
+        int Num3 = store.pop();
+        System.out.println("The element that deleted "+Num3);
+        String dis3 = store.toString();
+        System.out.println("The current stack contents "+dis3+" or empty");
+
+
+
+    }
+
+}
